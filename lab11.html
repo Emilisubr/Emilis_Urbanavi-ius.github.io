@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>laboratorinis darbas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main3.css" rel="stylesheet">
+  <style>
+    /* CSS for video and iframe responsiveness */
+    video, iframe {
+      width: 100%;
+      height: auto;
+    }
+    iframe {
+      border: none;
+    }
+
+    /* Dark Mode Button Styling */
+    #dark-mode-toggle {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #ff6347;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    #dark-mode-toggle:hover {
+      background-color: #e5533d;
+    }
+    
+    /* Dark Mode Styling */
+    body.dark-mode {
+      background-color: #333;
+      color: #f4f7fc;
+    }
+
+    body.dark-mode button {
+      background-color: #333;
+    }
+
+    body.dark-mode button:hover {
+      background-color: #555;
+    }
+
+    /* Additional Styling for the New Section */
+    .math-equation {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 500px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .equation p {
+      font-size: 20px;
+      color: #333;
+    }
+
+    /* Styling for the Clock */
+    #clock {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body class="starter-page-page">
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle" onclick="toggleTheme()">Šviesus režimas</button>
+
+    <!-- Clock Section -->
+    <section id="clock-section" class="clock-section">
+      <div class="container">
+        <p id="clock"></p> <!-- Laikrodis bus rodomas čia -->
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Sužinok apie mane</p>
+        </div>
+        <img src="assets/img/profile-img.jpg" alt="About Me" style="max-width: 50%; height: 150px;">
+        <p>Studentas VilniusTech universitete. Studijuoju informacinių sistemų inžineriją</p>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Mano išsilavinimas</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Išsilavinimas</h3>
+            <ul>
+              <li><strong>VilniusTech</strong> informacinių sistemų inžinerija (2023-dabar)</li>
+              <li><strong>CodeAcademy</strong> Advanced Web Development Course (2020-2021)</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3>Darbo patirtis</h3>
+            <ul>
+              <li><strong>Studentas</strong></li>
+              <li><strong>Skills:</strong> C++, C, Html, Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Kaikurie mano darbai</p>
+        </div>
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/code.jpg" class="img-fluid" alt="E-Commerce Website">
+              <div class="portfolio-info">
+                <h4>Expert coding</h4>
+                <p>High level of coding.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Mathematical Equation and Image Section -->
+    <section class="math-equation">
+      <div class="container">
+        <div class="equation">
+          <!-- LaTeX Code for Mathematical Expression -->
+          <p>
+            \[
+            f(a) = \frac{1}{2\pi i} \oint \frac{f(z)}{z - a} \, dz
+            \]
+          </p>
+        </div>
+        <div class="image-container">
+          <!-- Image Included -->
+          <img src="assets/img/math.png" alt="Mathematical Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Paslaugos</h2>
+          <p>Dalykai kuriais galėčiau padėti</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-code-slash"></i>
+            <h4>Kodavimas</h4>
+            <p>Galiu padaryti internetinį puslapį</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-phone"></i>
+            <h4>Telefonų tvarkymas</h4>
+            <p>Galiu perkrauti telefona.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-palette"></i>
+            <h4>UI/UX Design</h4>
+            <p>Galiu padaryti gražų dizainą.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Kontaktai</h2>
+          <p>Susisiekite</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Kaip galite su manimi susisiekti</h3>
+            <p>Email: vardas@gmail.com</p>
+            <p>Phone: +370 ********</p>
+          </div>
+          <div class="col-lg-6">
+            <h3>Parašyk man</h3>
+            <form>
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Your Email">
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Emilis Urbanavičius</h3>
+      <p>Delivering quality services in web and app development for your business needs.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/facebook/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- JS for theme toggle -->
+  <script src="theme-toggle.js"></script>
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="function.js"></script>
+  <script src="scroll.js"></script>
+  <script src="math.js"></script>
+  <script src="laikas.js"></script>
+
+  <!-- MathJax for rendering LaTeX -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+</body>
+
+</html>
