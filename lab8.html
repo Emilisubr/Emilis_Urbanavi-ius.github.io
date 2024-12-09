@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>laboratorinis darbas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+  <style>
+    /* CSS for video and iframe responsiveness */
+    video, iframe {
+      width: 100%;
+      height: auto;
+    }
+    iframe {
+      border: none;
+    }
+  </style>
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Learn more about me</p>
+        </div>
+        <!-- Personal Photo Added -->
+        <img src="assets/img/profile-img.jpg" alt="About Me" style="max-width: 50%; height: 50;">
+        <p>Studentas VilniusTech universitete. Studijuoju informacinių sistemų inžineriją</p>
+      </div>
+    </section>
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Mano išsilavinimas</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Education</h3>
+            <ul>
+              <li><strong>VilniusTech</strong> informacinių sistemų inžinerija (2023-dabar)</li>
+              <li><strong>CodeAcademy</strong> Advanced Web Development Course (2020-2021)</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3>Darbo patirtis</h3>
+            <ul>
+              <li><strong>Studentas</strong></li>
+              <li><strong>Skills:</strong> C++, C, Html, Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Kaikurie mano darbai</p>
+        </div>
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/code.jpg" class="img-fluid" alt="E-Commerce Website">
+              <div class="portfolio-info">
+                <h4>Expert coding</h4>
+                <p>High level of coding.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Paslaugos</h2>
+          <p>Dalykai kuriais galėčiau padėti</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-code-slash"></i>
+            <h4>Kodavimas</h4>
+            <p>Galiu padaryti internetinį puslapį</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-phone"></i>
+            <h4>Telefonų tvarkymas</h4>
+            <p>Galiu perkrauti telefona.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-palette"></i>
+            <h4>UI/UX Design</h4>
+            <p>Galiu padaryti gražų dizainą.</p>
+          </div>
+        </div>
+        <!-- Video embed -->
+        <div class="row">
+          <div class="col-12">
+            <h3>Watch Our Process</h3>
+            <video controls>
+              <source src="assets/img/lean.mp4" type="video/mp4">
+              
+            </video>                      
+          </div>
+        </div>
+        <!-- YouTube embed -->
+        <div class="row">
+          <div class="col-12">
+            <h3>Learn More About Us</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_XVzAm48pxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+        </div>        
+        <!-- Audio embed -->
+        <div class="row">
+          <div class="col-12">
+            <h3>Listen to Our Podcast</h3>
+            <audio controls>
+              <source src="assets/img/leanon.mp3" type="audio/mp3">
+             
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Get in touch</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Contact Details</h3>
+            <p>Email: vardas@gmail.com</p>
+            <p>Phone: +370 ********</p>
+          </div>
+          <div class="col-lg-6">
+            <h3>Parašyk man</h3>
+            <form>
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Your Email">
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Emilis Urbanavičius</h3>
+      <p>Delivering quality services in web and app development for your business needs.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/facebook/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
